@@ -10,7 +10,7 @@ nmap -p- -sV -T 4 -sC IP -Pn # usages
 ```
 
 #### Installation for development using UV
--  Reference : [nmap https://nmap.org/](https://www.netexec.wiki/getting-started/installation/installation-on-unix)
+-  Reference : https://www.netexec.wiki/getting-started/installation/installation-on-unix
 ```shell
 
 # Install uv (and rust)
