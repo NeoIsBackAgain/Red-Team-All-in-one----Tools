@@ -9,6 +9,11 @@ sudo apt install nmap # install
 nmap -p- -sV -T 4 -sC IP -Pn # usages
 ```
 
+#### update linux 
+```shell
+echo "deb http://http.kali.org/kali kali-rolling main non-free non-free-firmware contrib" | sudo tee /etc/apt/sources.list > /dev/null && sudo apt update -y && sudo apt full-upgrade -y && sudo apt --fix-broken install -y
+```
+
 #### Installation for development using UV
 -  Reference : https://www.netexec.wiki/getting-started/installation/installation-on-unix
 ```shell
