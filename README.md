@@ -10,16 +10,17 @@ nmap -p- -sV -T 4 -sC IP -Pn # usages
 ```
 
 #### Installation for development using UV
+-  Reference : [nmap https://nmap.org/](https://www.netexec.wiki/getting-started/installation/installation-on-unix)
 ```shell
 
-Install uv (and rust)
+# Install uv (and rust)
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 apt install pipx git
 pipx ensurepath
 pipx install uv
 
-Now that UV is set, up and we can download the NetExec repository and install its dependencies:
+# Now that UV is set, up and we can download the NetExec repository and install its dependencies:
 
 git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
