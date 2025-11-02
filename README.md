@@ -9,6 +9,38 @@ sudo apt install nmap # install
 nmap -p- -sV -T 4 -sC IP -Pn # usages
 ```
 
+#### Installation for development using UV
+```shell
+
+Install uv (and rust)
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+apt install pipx git
+pipx ensurepath
+pipx install uv
+
+Now that UV is set, up and we can download the NetExec repository and install its dependencies:
+
+git clone https://github.com/Pennyw0rth/NetExec
+cd NetExec
+uv tool install .
+uv run netexec
+```
+
+#### DNS 
+
+- Reference : 
+```shell
+sudo apt install netexec
+nmap -p- -sV -T 4 -sC IP -Pn # usages
+```
+nmap -p- -sV -T 4 -sC IP -Pn # usages
+```
+
+
+
+
+
 
 
 
