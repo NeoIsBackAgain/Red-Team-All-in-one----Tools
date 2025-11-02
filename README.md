@@ -26,7 +26,8 @@ pipx ensurepath
 pipx install uv
 
 # Now that UV is set, up and we can download the NetExec repository and install its dependencies:
-
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 uv tool install .
