@@ -106,6 +106,11 @@ bind -n C-k send-keys -R \; send-keys C-l \; clear-history
 
 ```
 
+sudo apt install seclists
+sudo mkdir /opt/SecLists/
+sudo ln -s /usr/share/seclists  /opt/SecLists/
+
+
 
 
 
