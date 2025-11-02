@@ -24,6 +24,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo apt install pipx git
 pipx ensurepath
 pipx install uv
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
 
 # Now that UV is set, up and we can download the NetExec repository and install its dependencies:
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
