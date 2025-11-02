@@ -16,7 +16,7 @@ nmap -p- -sV -T 4 -sC IP -Pn # usages
 # Install uv (and rust)
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-apt install pipx git
+sudo apt install pipx git
 pipx ensurepath
 pipx install uv
 
