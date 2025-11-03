@@ -72,6 +72,7 @@ bind c new-window -c "#{pane_current_path}"
 ```
 | 功能 | 快捷鍵 | 說明 |
 |------|----------|------|
+| guidline  | `Ctrl + a → ?` | help  |
 | 新增視窗 | `Ctrl + a → c` | 在相同目錄下建立新視窗 |
 | 下一個視窗 | `Ctrl + a → n` | 切換至下一個視窗 |
 | 上一個視窗 | `Ctrl + a → p` | 切換至上一個視窗 |
@@ -80,6 +81,7 @@ bind c new-window -c "#{pane_current_path}"
 | 水平分割窗格 | `Ctrl + a → %` | 水平分割 |
 | 切換窗格 | `Ctrl + a → 方向鍵` | 在不同窗格間移動 |
 | 進入複製模式 | `Ctrl + a → [` | 可用 Vi 鍵操作滾動、複製 |
+| COPY | `Ctrl + a → space` | 可用 Vi 鍵操作滾動、複製 |
 | 離開 tmux（分離） | `Ctrl + a → d` | 斷開但保留 session |
 | 重新連回 | `tmux attach` | 回到之前的 session |
 
