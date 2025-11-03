@@ -66,7 +66,7 @@ git clone https://github.com/danielmiessler/SecLists.git
 - Reference : https://0xdf.gitlab.io/cheatsheets/uv#scripts
 ```shell
 vim exploit.py
-uv add --script ./ exploit.py requests
+uv add --script ./exploit.py request{your need  package}
 uv run  exploit.py
 
 ```
