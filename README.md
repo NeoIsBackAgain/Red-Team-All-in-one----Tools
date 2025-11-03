@@ -64,8 +64,12 @@ git clone https://github.com/danielmiessler/SecLists.git
 
 #### uv cve uages 
 - Reference : https://0xdf.gitlab.io/cheatsheets/uv#scripts
+```shell
+vim exploit.py
+uv add --script ./ exploit.py requests
+uv run  exploit.py
 
-
+```
 
 
 
