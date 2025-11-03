@@ -82,6 +82,7 @@ bind c new-window -c "#{pane_current_path}"
 | 切換窗格 | `Ctrl + a → 方向鍵` | 在不同窗格間移動 |
 | 進入複製模式 | `Ctrl + a → [` | 可用 Vi 鍵操作滾動、複製 |
 | COPY | `Ctrl + a → space` | 可用 Vi 鍵操作滾動、複製 |
+| paste | `Ctrl + a → =` | 複製 |
 | 離開 tmux（分離） | `Ctrl + a → d` | 斷開但保留 session |
 | 重新連回 | `tmux attach` | 回到之前的 session |
 
