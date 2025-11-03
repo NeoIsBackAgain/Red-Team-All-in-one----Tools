@@ -51,6 +51,33 @@ nmap -p- -sV -T 4 -sC IP -Pn # usages
 - Reference : https://hackmd.io/@lunzaizai/rJmSXfk-c#%E5%AE%89%E8%A3%9D-Tmux
 ```shell
 vim ~/.tmux.conf
+
+
+# start with mouse mode enabled
+set -g mouse off
+
+# force Vi mode
+#   really you should export VISUAL or EDITOR environment variable, see manual
+set -g status-keys vi
+set -g mode-keys vi
+
+
+
+
+# replace C-b by C-a instead of using both prefixes
+# set -gu prefix2
+unbind C-a
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix "#{pane_current_path}"
+
+# if you don't want Oh my tmux! to alter a binding or a setting, use #!important
+bind c new-window -c "#{pane_current_path}"  #!important
+
+# move status line to top
+#set -g status-position top
+
+
 ```
 
 
