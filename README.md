@@ -100,7 +100,15 @@ git clone https://github.com/danielmiessler/SecLists.git
 vim exploit.py
 uv add --script ./exploit.py request{your need  package}
 uv run  exploit.py
+```
 
+
+#### pipx4adtools
+- Reference : https://github.com/manesec/pipx4adtools
+```shell
+uv tool install git+https://github.com/manesec/pipx4adtools
+uv tool install git+https://github.com/manesec/pipx4adtools@relay-sccm
+uv tool install git+https://github.com/manesec/pipx4adtools@tgssub
 ```
 
 
