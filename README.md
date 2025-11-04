@@ -113,35 +113,34 @@ uv tool install git+https://github.com/manesec/pipx4adtools@tgssub
 #### precompiled-binaries
 - Reference : [https://github.com/manesec/pipx4adtools](https://github.com/jakobfriedl/precompiled-binaries)
 > i edit the file for more flexable and easy for OSCP AND CPTS 
-| 路徑 | 檔名 | 來源（URL / Repo） | 取得日期 (YYYY-MM-DD) | 版本 / 標籤 | SHA256 | 驗證狀態 |
-|---|---|---|---:|---|---|---|
-| Credentials/ | mimikatz.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Enumeration/ | NoPowerShell.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Enumeration/ | SharpUp.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Enumeration/ | SharpView.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Enumeration/ | winPEAS.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| LateralMovement/ | ADModule.dll | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| LateralMovement/GPOAbuse/ | SharpGPO.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| LateralMovement/GPOAbuse/ | SharpGPOAbuse.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| LateralMovement/ | Rubeus.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| LateralMovement/ | SharpRDP.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | GodPotato.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | JuicyPotato.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/KrbRelay/ | CheckPort.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/KrbRelay/ | KrbRelay.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/KrbRelay/ | SCMUACBypass.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | KrbRelayUp.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | NetworkServiceExploit.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | noPac.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | PrintSpoofer64.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| PrivilegeEscalation/ | SharpEfsPotato.exe | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Scripts/ | Inveigh.ps1 | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Scripts/ | LAPSToolkit.ps1 | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Scripts/ | Powermad.ps1 | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Scripts/ | PowerUp.ps1 | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Scripts/ | PowerUpSQL.ps1 | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-| Scripts/ | PowerView.ps1 | ____________________ | ____-__-__ | ____________________ | ____________________ | [ ] 已驗證 [ ] 未驗證 |
-
+| 路徑                            | 檔名                        | 版本 / 標籤 | purpose                                    | 驗證狀態            |
+| ----------------------------- | ------------------------- | ------- | ------------------------------------------ | --------------- |
+| Credentials/                  | mimikatz.exe              |         | 憑證擷取（credential dumping）                   | [ ] 已驗證 [ ] 未驗證 |
+| Enumeration/                  | NoPowerShell.exe          |         | 偵查 / 禁用 PowerShell 偵測繞過                    | [ ] 已驗證 [ ] 未驗證 |
+| Enumeration/                  | SharpUp.exe               |         | 偵查 / 提權弱點掃描                                | [ ] 已驗證 [ ] 未驗證 |
+| Enumeration/                  | SharpView.exe             |         | AD 偵察（查詢 AD 資訊）                            | [ ] 已驗證 [ ] 未驗證 |
+| Enumeration/                  | winPEAS.exe               |         | 自動化偵測環境弱點（本機/AD）                           | [ ] 已驗證 [ ] 未驗證 |
+| LateralMovement/              | ADModule.dll              |         | AD 操作模組（輔助工具）                              | [ ] 已驗證 [ ] 未驗證 |
+| LateralMovement/GPOAbuse/     | SharpGPO.exe              |         | GPO 相關操作 / 濫用工具                            | [ ] 已驗證 [ ] 未驗證 |
+| LateralMovement/GPOAbuse/     | SharpGPOAbuse.exe         |         | GPO 濫用（權限/設定）                              | [ ] 已驗證 [ ] 未驗證 |
+| LateralMovement/              | Rubeus.exe                |         | Kerberos 工具（票證操作與攻擊）                       | [ ] 已驗證 [ ] 未驗證 |
+| LateralMovement/              | SharpRDP.exe              |         | RDP 相關操作 / 橫向移動輔助                          | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | GodPotato.exe             |         | 本機提權（NT AUTHORITY\SYSTEM 利用）               | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | JuicyPotato.exe           |         | 本機提權（權限提升利用）                               | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/KrbRelay/ | CheckPort.exe             |         | Kerberos relay 前置檢查（連線/埠）                  | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/KrbRelay/ | KrbRelay.exe              |         | Kerberos relay 攻擊工具                        | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/KrbRelay/ | SCMUACBypass.exe          |         | SCM / UAC 繞過工具                             | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | KrbRelayUp.exe            |         | Kerberos relay 與提權整合工具                     | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | NetworkServiceExploit.exe |         | 針對 NetworkService 提權利用                     | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | noPac.exe                 |         | 跳過系統保護或權限繞過工具                              | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | PrintSpoofer64.exe        |         | Print Spooler 提權利用                         | [ ] 已驗證 [ ] 未驗證 |
+| PrivilegeEscalation/          | SharpEfsPotato.exe        |         | EFS / 提權相關利用工具                             | [ ] 已驗證 [ ] 未驗證 |
+| Scripts/                      | Inveigh.ps1               |         | 網路/協定偵察與中繼（NTLM/LLMNR/MDNS）                | [ ] 已驗證 [ ] 未驗證 |
+| Scripts/                      | LAPSToolkit.ps1           |         | 與 LAPS（Local Admin Password Solution）互動/測試 | [ ] 已驗證 [ ] 未驗證 |
+| Scripts/                      | Powermad.ps1              |         | 自動化偵查 / 辅助腳本                               | [ ] 已驗證 [ ] 未驗證 |
+| Scripts/                      | PowerUp.ps1               |         | 提權檢查腳本（本機弱點檢查）                             | [ ] 已驗證 [ ] 未驗證 |
+| Scripts/                      | PowerUpSQL.ps1            |         | SQL Server 相關提升檢查腳本                        | [ ] 已驗證 [ ] 未驗證 |
+| Scripts/                      | PowerView.ps1             |         | AD 偵察 / 查詢 / 腳本化操作                         | [ ] 已驗證 [ ] 未驗證 |
 
 
 
