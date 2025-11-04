@@ -1,3 +1,5 @@
+NMAP setting
+
 ## Make new directory
      ->> mkdir /usr/share/nmap
 
