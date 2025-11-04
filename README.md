@@ -112,7 +112,6 @@ uv tool install git+https://github.com/manesec/pipx4adtools@tgssub
 ```
 #### precompiled-binaries
 - Reference : [https://github.com/manesec/pipx4adtools](https://github.com/jakobfriedl/precompiled-binaries)
-> i edit the file for more flexable and easy for OSCP AND CPTS 
 | 路徑 | 檔名 | 版本 | purpose | 驗證狀態 |
 | ----------------------------- | ------------------------- | ------- | ------------------------------------------ | --------------- |
 | Credentials/ | mimikatz.exe | TBD | 憑證擷取（credential dumping） | [ ] 未驗證 |
